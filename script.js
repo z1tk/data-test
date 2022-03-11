@@ -45,7 +45,7 @@ window.onload = function () {
         }
     }
     if (queryString["n"] != null && queryString["uid"] != null && queryString["s"] != null) {
-        setCookie("data", queryString["n"] + ":" + queryString["uid"] + ":" + queryString["s"]);
+        setCookie("data", queryString["n"] + ":" + queryString["uid"] + ":" + queryString["s"], 60);
         location.href = "./index.html";
     }
 };
